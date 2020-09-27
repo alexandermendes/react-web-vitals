@@ -1,0 +1,53 @@
+{
+  "name": "react-web-vitals",
+  "version": "1.0.0",
+  "description": "A React hook to print warnings if Web Vitals are above best practice thresholds.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "build": "babel src --out-dir dist",
+    "prebuild": "rimraf dist",
+    "prepublishOnly": "yarn install && yarn run build"
+  },
+  "author": "Alex Mendes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandermendes/react-web-vitals"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@testing-library/react-hooks": "^3.4.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.2",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "react": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "usertiming": "^0.1.8"
+  },
+  "dependencies": {
+    "web-vitals": "^0.2.4"
+  }
+}
