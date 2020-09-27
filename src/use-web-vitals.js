@@ -54,12 +54,12 @@ const defaultReporter = ({
   } = thresholds[name];
 
   if (value > error) {
-    console.error(`Web Vitals Error: ${title} value is above ${error} (received ${value}${unit})`);
+    console.error(`Web Vitals Error: ${title} value is above ${error}${unit} (received ${value}${unit})`);
     return;
   }
 
   if (value > warn) {
-    console.error(`Web Vitals Warning: ${title} value is above ${warn} (received ${value}${unit})`);
+    console.error(`Web Vitals Warning: ${title} value is above ${warn}${unit} (received ${value}${unit})`);
   }
 };
 
