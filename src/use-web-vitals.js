@@ -72,8 +72,6 @@ export const useWebVitals = typeof window === 'undefined' ? noop : ({
       return;
     }
 
-    console.log('Checking web vitals');
-
     getCLS(reporter);
     getFID(reporter);
     getLCP(reporter);
