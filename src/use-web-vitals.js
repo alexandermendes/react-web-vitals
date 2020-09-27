@@ -40,8 +40,8 @@ const defaultReporter = ({
     },
     TTFB: {
       title: 'Time To First Byte',
-      warn: 150,
-      error: 300,
+      warn: 200,
+      error: 400,
       unit: 'ms',
     },
   };
