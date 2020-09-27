@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-import { useWebVitals } from '../../src';
+import { useWebVitals } from '../src';
 
 describe('Server', () => {
   it('does not throw when loaded on the server', () => {
